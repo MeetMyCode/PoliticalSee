@@ -1,0 +1,6 @@
+framework module Pods_PoliticalSeeUITests {
+  umbrella header "Pods-PoliticalSeeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
