@@ -30,10 +30,10 @@ class StartVC: UIViewController{
         super.viewDidLoad()
                 
         //MARK: - CHECK IF MPDATA HAS BEEN POPULATED. IF SO, DO NOTHING, OTHERWISE GET MP INFO VIA GETMPDATA.START()
-        let file: FileHandle? = FileHandle(forReadingAtPath: "/Users/rossco/Desktop/Swift Development/PoliticalSee/PoliticalSee/mpData.txt")
+        let file: FileHandle? = FileHandle(forReadingAtPath: "/Users/rossco/Desktop/Software Development/Swift Development/PoliticalSee/PoliticalSee/mpData.txt")
         
         do{
-            let fileAttributes = try FileManager.default.attributesOfItem(atPath: "/Users/rossco/Desktop/Swift Development/PoliticalSee/PoliticalSee/mpData.txt")
+            let fileAttributes = try FileManager.default.attributesOfItem(atPath: "/Users/rossco/Desktop/Software Development/Swift Development/PoliticalSee/PoliticalSee/mpData.txt")
             fileSize = fileAttributes[FileAttributeKey.size] as? Int
             
             file?.closeFile()
@@ -116,7 +116,7 @@ class StartVC: UIViewController{
         var finalMpInfoList = [[String:String]]()
         
         //FIXME: - THIS MIGHT HAVE TO BE SET AS A RELATIVE PATH WHEN BUILDING FOR RELEASE.
-        let filePath = URL(fileURLWithPath: "/Users/rossco/Desktop/Swift Development/PoliticalSee/PoliticalSee/mpData.txt")
+        let filePath = URL(fileURLWithPath: "/Users/rossco/Desktop/Software Development/Swift Development/PoliticalSee/PoliticalSee/mpData.txt")
         
         do{
             

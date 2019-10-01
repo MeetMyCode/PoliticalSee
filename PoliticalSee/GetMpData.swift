@@ -37,7 +37,7 @@ class GetMpData{
         print("mp info retrieval complete!")
 
         //WRITE ALL MP DATA TO FILE
-        let file: FileHandle? = FileHandle(forWritingAtPath: "/Users/rossco/Desktop/Swift Development/PoliticalSee/PoliticalSee/mpData.txt")
+        let file: FileHandle? = FileHandle(forWritingAtPath: "/Users/rossco/Desktop/Software Development/Swift Development/PoliticalSee/PoliticalSee/mpData.txt")
         writeMpToFile(file: file)
         file?.closeFile()
         

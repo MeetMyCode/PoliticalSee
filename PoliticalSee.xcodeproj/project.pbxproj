@@ -13,8 +13,6 @@
 		AD07A2A11E428BB8004754FC /* Biography.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07A2A01E428BB8004754FC /* Biography.swift */; };
 		AD07A2A31E4293FF004754FC /* DetailPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07A2A21E4293FF004754FC /* DetailPane.swift */; };
 		AD2133891E93015200E1D475 /* StatsAboutParliament.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2133881E93015200E1D475 /* StatsAboutParliament.swift */; };
-		AD3C22081E95894C00768CF3 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C22071E95894C00768CF3 /* Charts.framework */; };
-		AD3C22091E95894C00768CF3 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C22071E95894C00768CF3 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD4A58681E2C3B6E009616F5 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A58671E2C3B6E009616F5 /* CustomCell.swift */; };
 		AD4F434B1E3167380035A903 /* TopBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F434A1E3167380035A903 /* TopBarVC.swift */; };
 		AD4F434D1E3172DB0035A903 /* CategoryPickerOverlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F434C1E3172DB0035A903 /* CategoryPickerOverlayVC.swift */; };
@@ -66,7 +64,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AD3C22091E95894C00768CF3 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,7 +81,6 @@
 		AD07A2A01E428BB8004754FC /* Biography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biography.swift; sourceTree = "<group>"; };
 		AD07A2A21E4293FF004754FC /* DetailPane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPane.swift; sourceTree = "<group>"; };
 		AD2133881E93015200E1D475 /* StatsAboutParliament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsAboutParliament.swift; sourceTree = "<group>"; };
-		AD3C22071E95894C00768CF3 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4A58671E2C3B6E009616F5 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		AD4F434A1E3167380035A903 /* TopBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarVC.swift; sourceTree = "<group>"; };
 		AD4F434C1E3172DB0035A903 /* CategoryPickerOverlayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickerOverlayVC.swift; sourceTree = "<group>"; };
@@ -125,7 +121,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3C22081E95894C00768CF3 /* Charts.framework in Frameworks */,
 				626A5AC7FC4660B80BF60788 /* Pods_PoliticalSee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +170,6 @@
 		ADD135B01E2A680B005846BE = {
 			isa = PBXGroup;
 			children = (
-				AD3C22071E95894C00768CF3 /* Charts.framework */,
 				AD9A88E01E2C31AF004610E5 /* Default-568h@2x.png */,
 				ADD135BB1E2A680C005846BE /* PoliticalSee */,
 				ADD135D31E2A680C005846BE /* PoliticalSeeTests */,
@@ -202,6 +196,7 @@
 				ADE5F9921E468BB60009D111 /* Utilities - do not include in final app. */,
 				ADE5F9801E46029A0009D111 /* VC's */,
 				ADD135C01E2A680C005846BE /* Main.storyboard */,
+				ADA023D01E55023C0009A9A8 /* mpData.txt */,
 				ADE5F9811E4602CE0009D111 /* Everything Else */,
 			);
 			path = PoliticalSee;
@@ -254,7 +249,6 @@
 		ADE5F9811E4602CE0009D111 /* Everything Else */ = {
 			isa = PBXGroup;
 			children = (
-				ADA023D01E55023C0009A9A8 /* mpData.txt */,
 				ADD135C61E2A680C005846BE /* Assets.xcassets */,
 				ADD135C81E2A680C005846BE /* LaunchScreen.storyboard */,
 				ADD135CB1E2A680C005846BE /* Info.plist */,
@@ -284,7 +278,6 @@
 				ADD135B71E2A680B005846BE /* Resources */,
 				AD7FC8491E92ED6B00A7162A /* ShellScript */,
 				2D2D108077CA9112F0DE2A37 /* [CP] Embed Pods Frameworks */,
-				C4E4FFB0967E7E4D76089656 /* [CP] Copy Pods Resources */,
 				AD3C22061E95893000768CF3 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -304,8 +297,6 @@
 				ADD135CC1E2A680C005846BE /* Sources */,
 				ADD135CD1E2A680C005846BE /* Frameworks */,
 				ADD135CE1E2A680C005846BE /* Resources */,
-				1611787769C66704490EFF59 /* [CP] Embed Pods Frameworks */,
-				0C759291C5F1661C98D46D6E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,8 +316,6 @@
 				ADD135D71E2A680C005846BE /* Sources */,
 				ADD135D81E2A680C005846BE /* Frameworks */,
 				ADD135D91E2A680C005846BE /* Resources */,
-				836C40AD26E08BCFBADD73EB /* [CP] Embed Pods Frameworks */,
-				8F0357F43C6F04D93454EC13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -424,43 +413,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoliticalSee-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		0C759291C5F1661C98D46D6E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoliticalSeeTests/Pods-PoliticalSeeTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1611787769C66704490EFF59 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoliticalSeeTests/Pods-PoliticalSeeTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D2D108077CA9112F0DE2A37 /* [CP] Embed Pods Frameworks */ = {
@@ -469,43 +431,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PoliticalSee/Pods-PoliticalSee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoliticalSee/Pods-PoliticalSee-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		836C40AD26E08BCFBADD73EB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoliticalSeeUITests/Pods-PoliticalSeeUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8F0357F43C6F04D93454EC13 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoliticalSeeUITests/Pods-PoliticalSeeUITests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PoliticalSee/Pods-PoliticalSee-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9765A51767B03768DF550963 /* [CP] Check Pods Manifest.lock */ = {
@@ -514,13 +449,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoliticalSeeTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A747B030A35BF92E97DEF542 /* [CP] Check Pods Manifest.lock */ = {
@@ -529,13 +467,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoliticalSeeUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AD7FC8491E92ED6B00A7162A /* ShellScript */ = {
@@ -550,21 +491,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "";
-		};
-		C4E4FFB0967E7E4D76089656 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoliticalSee/Pods-PoliticalSee-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
