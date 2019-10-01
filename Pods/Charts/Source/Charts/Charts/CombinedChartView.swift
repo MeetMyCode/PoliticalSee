@@ -223,3 +223,5 @@ open class CombinedChartView: BarLineChartViewBase, CombinedChartDataProvider
     /// - returns: `true` the highlight is be full-bar oriented, `false` ifsingle-value
     open var isHighlightFullBarEnabled: Bool { return highlightFullBarEnabled }
 }
+@objc
+@objc

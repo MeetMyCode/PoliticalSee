@@ -138,7 +138,7 @@ class CategoryPickerOverlayVC: UIViewController {
     
     //MISC METHODS
 
-    func FilterOptionButtonPressed(sender: UIButton) {
+    @objc func FilterOptionButtonPressed(sender: UIButton) {
         performSegue(withIdentifier: "unwindToStartVC", sender: sender)
         
     }

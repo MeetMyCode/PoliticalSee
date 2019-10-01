@@ -658,9 +658,9 @@ class StatsAboutParliament: UIViewController {
         for each in subviews{
             if each.tag == 1000 || each.tag == 1001 || each.tag == 1002 || each.tag == 1003{
                 
-                if each != nil{
+                //if each != nil{
                     each.removeFromSuperview()
-                }
+                //}
             }
         }
 

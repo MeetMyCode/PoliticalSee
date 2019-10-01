@@ -132,7 +132,7 @@ class UtilityFunctions: UIViewController{
                     MPSocialFilePath?.closeFile()
                     
                 }catch{
-                    print(Error as! NSError)
+                    print(Error as NSError?)
                 }
                 
             }else{

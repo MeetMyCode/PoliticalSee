@@ -100,7 +100,7 @@ class GetMpData{
                                 
                                 self.eachMp["dob"] = formatDateOfBirthString(dateOfBirthStringToFormat: dateOfBirthStringToFormat!)
                                 
-                                print("date fo birth is: \(self.eachMp["dob"])")
+                                print("date fo birth is: \(self.eachMp["dob"] as Optional)")
                             }
                         }
                         if mp["DisplayAs"] is NSNull{

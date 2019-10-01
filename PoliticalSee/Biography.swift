@@ -69,7 +69,7 @@ class Biography: UIViewController {
             let session = URLSession(configuration: .ephemeral)
             let task = session.dataTask(with: request, completionHandler: { (Data, URLResponse, Error) in
                 
-                print("Data is: \(Data)")
+                print("Data is: \(Data as Optional)")
                 
                 let image = UIImage(data: Data!)
                 
