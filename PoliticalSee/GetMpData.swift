@@ -441,7 +441,7 @@ class GetMpData{
                     }
                     
                 }catch{
-                    print("error is: \(Error.debugDescription as String!)")
+                    print("error is: \(Error.debugDescription as String)")
                 }
                 
                 

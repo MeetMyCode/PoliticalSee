@@ -337,7 +337,7 @@ class StatsAboutParliament: UIViewController {
             }
             
             //CREATE DATASET.
-            let ageDistributionDataSet = PieChartDataSet(values: entries, label: "Age Distribution.\(dobNotPresent) MP(s) have not published their age.")
+            let ageDistributionDataSet = PieChartDataSet(entries: entries, label: "Age Distribution.\(dobNotPresent) MP(s) have not published their age.")
             
             //ENSURE A DIFFERENT COLOR FOR EACH PIE SLICE IN THE DATASET WITH CUSTOM COLOR ARRAY.
             ageDistributionDataSet.colors = colorToUse
@@ -368,7 +368,7 @@ class StatsAboutParliament: UIViewController {
             //CREATE SEPERATE DATA ENTRIES AND DATASETS PER PARTY.
             for ageGroup in ageDistributionDict{
                 let entry = BarChartDataEntry(x: Double(incrementer), y: Double(ageGroup.value))
-                let set = BarChartDataSet(values: [entry], label: "\(ageGroup.key)")
+                let set = BarChartDataSet(entries: [entry], label: "\(ageGroup.key)")
                 dataSets.append(set)
                 incrementer = incrementer + 1
             }
@@ -441,7 +441,7 @@ class StatsAboutParliament: UIViewController {
             }
             
             //CREATE DATASET.
-            let seatsPerPartyDataSet = PieChartDataSet(values: entries, label: "Seats Per Party")
+            let seatsPerPartyDataSet = PieChartDataSet(entries: entries, label: "Seats Per Party")
             
             //ENSURE A DIFFERENT COLOR FOR EACH PIE SLICE IN THE DATASET WITH CUSTOM COLOR ARRAY.
             seatsPerPartyDataSet.colors = colorToUse
@@ -466,7 +466,7 @@ class StatsAboutParliament: UIViewController {
             //CREATE SEPERATE DATA ENTRIES AND DATASETS PER PARTY.
             for eachParty in seatsPerPartyDict{
                 let entry = BarChartDataEntry(x: Double(incrementer), y: Double(eachParty.value))
-                let set = BarChartDataSet(values: [entry], label: "\(eachParty.key)")
+                let set = BarChartDataSet(entries: [entry], label: "\(eachParty.key)")
                 dataSets.append(set)
                 incrementer = incrementer + 1
             }
@@ -509,7 +509,7 @@ class StatsAboutParliament: UIViewController {
             let males = PieChartDataEntry(value: Double(self.males!), label: "Males (\(percentMen)%)")
             let females = PieChartDataEntry(value: Double(self.females!), label: "Females (\(percentWomen)%)")
             
-            let dataSet = PieChartDataSet(values: [males,females], label: "")
+            let dataSet = PieChartDataSet(entries: [males,females], label: "")
             
             //ENSURE A DIFFERENT COLOR FOR EACH PIE SLICE.
             dataSet.colors = colorsToUse
@@ -530,8 +530,8 @@ class StatsAboutParliament: UIViewController {
             let females = BarChartDataEntry(x: 1.0, y: self.females!)
 
             //CREATE A SEPERATE DATASET FOR EACH BAR/SET OF BARS WITH IT'S/THEIR OWN KEY LABEL.
-            let maleDataSet = BarChartDataSet(values: [males], label: "Males \(percentMen)%")
-            let femaleDataSet = BarChartDataSet(values: [females], label: "Females \(percentWomen)%")
+            let maleDataSet = BarChartDataSet(entries: [males], label: "Males \(percentMen)%")
+            let femaleDataSet = BarChartDataSet(entries: [females], label: "Females \(percentWomen)%")
 
             //SET X AXIS BAR LABELS AND POSTION.
             BarChart?.xAxis.labelPosition = .bottom
