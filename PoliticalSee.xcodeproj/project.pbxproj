@@ -340,20 +340,20 @@
 					ADD135B81E2A680B005846BE = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7NF38C7742;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 					};
 					ADD135CF1E2A680C005846BE = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7NF38C7742;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 						TestTargetID = ADD135B81E2A680B005846BE;
 					};
 					ADD135DA1E2A680C005846BE = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7NF38C7742;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 						TestTargetID = ADD135B81E2A680B005846BE;
 					};
@@ -701,7 +701,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Coco.PoliticalSee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -716,7 +716,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Coco.PoliticalSee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -732,7 +732,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Coco.PoliticalSeeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoliticalSee.app/PoliticalSee";
 			};
 			name = Debug;
@@ -749,7 +749,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Coco.PoliticalSeeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoliticalSee.app/PoliticalSee";
 			};
 			name = Release;
@@ -765,7 +765,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Coco.PoliticalSeeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = PoliticalSee;
 			};
 			name = Debug;
@@ -781,7 +781,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Coco.PoliticalSeeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = PoliticalSee;
 			};
 			name = Release;

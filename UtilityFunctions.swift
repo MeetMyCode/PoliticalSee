@@ -87,7 +87,7 @@ class UtilityFunctions: UIViewController{
                         //GET TWITTER
                         if let twitter = eachMp["twitter"] as? NSDictionary{
 
-                            twit = twitter["_value"] as! String!
+                            twit = twitter["_value"] as! String?
 
                         }else{
                             twit = "No Twitter account found."

@@ -375,7 +375,7 @@ class StatsAboutParliament: UIViewController {
             
             //ENSURE A DIFFERENT COLOR FOR EACH BAR/DATASET.
             for set in dataSets{
-                set.setColor(colorToUse[dataSets.index(of: set)!])
+                set.setColor(colorToUse[dataSets.firstIndex(of: set)!])
             }
             
             BarChart?.data = BarChartData(dataSets: dataSets)
@@ -473,7 +473,7 @@ class StatsAboutParliament: UIViewController {
 
             //ENSURE A DIFFERENT COLOR FOR EACH BAR/DATASET.
             for set in dataSets{
-                set.setColor(colorToUse[dataSets.index(of: set)!])
+                set.setColor(colorToUse[dataSets.firstIndex(of: set)!])
             }
             
             BarChart?.data = BarChartData(dataSets: dataSets)

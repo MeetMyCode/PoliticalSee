@@ -166,12 +166,12 @@ class MPList: UIViewController, UITableViewDataSource, UITableViewDelegate, UISe
             tabBarReference?.currentMp = mp
             
             //REMOVE OLD VC OF TYPE DETAILPANE - THIS IS THE FIRST MP TO LOAD AT STARTUP.
-            detailVC.willMove(toParentViewController: nil)
+            detailVC.willMove(toParent: nil)
             detailVC.view.removeFromSuperview()
-            detailVC.removeFromParentViewController()
+            detailVC.removeFromParent()
             
             //ADD NEW VC
-            parentVC.addChildViewController(tabBioRef!)
+            parentVC.addChild(tabBioRef!)
             
             let width = detailContainerView?.frame.width
             let height = detailContainerView?.frame.height
@@ -180,7 +180,7 @@ class MPList: UIViewController, UITableViewDataSource, UITableViewDelegate, UISe
             
             detailContainerView?.addSubview((tabBioRef?.view)!)
             
-            tabBioRef?.didMove(toParentViewController: parentVC)
+            tabBioRef?.didMove(toParent: parentVC)
 
 
         }

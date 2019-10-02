@@ -94,37 +94,37 @@ class TabBar: UIViewController {
         case "Biography":
             
             //REMOVE OLD VC
-            tabBioRef?.willMove(toParentViewController: nil)
+            tabBioRef?.willMove(toParent: nil)
             tabBioRef?.view.removeFromSuperview()
-            tabBioRef?.removeFromParentViewController()
+            tabBioRef?.removeFromParent()
             
         case "News Feed":
             
             //REMOVE OLD VC
-            tabNewsRef?.willMove(toParentViewController: nil)
+            tabNewsRef?.willMove(toParent: nil)
             tabNewsRef?.view.removeFromSuperview()
-            tabNewsRef?.removeFromParentViewController()
+            tabNewsRef?.removeFromParent()
             
         case "Social Media":
             
             //REMOVE OLD VC
-            tabSocialRef?.willMove(toParentViewController: nil)
+            tabSocialRef?.willMove(toParent: nil)
             tabSocialRef?.view.removeFromSuperview()
-            tabSocialRef?.removeFromParentViewController()
+            tabSocialRef?.removeFromParent()
             
         case "Petitions":
             
             //REMOVE OLD VC
-            tabPetitionsRef?.willMove(toParentViewController: nil)
+            tabPetitionsRef?.willMove(toParent: nil)
             tabPetitionsRef?.view.removeFromSuperview()
-            tabPetitionsRef?.removeFromParentViewController()
+            tabPetitionsRef?.removeFromParent()
             
         case "Stats":
             
             //REMOVE OLD VC
-            tabStatsRef?.willMove(toParentViewController: nil)
+            tabStatsRef?.willMove(toParent: nil)
             tabStatsRef?.view.removeFromSuperview()
-            tabStatsRef?.removeFromParentViewController()
+            tabStatsRef?.removeFromParent()
             
         default:
             print("Error: unrecognised value for currentVcInDetailPane.")
@@ -145,7 +145,7 @@ class TabBar: UIViewController {
                 tabBioRef?.currentMp = currentMp!
                 
                 //ADD NEW VC
-                ParentVC?.addChildViewController(tabBioRef!)
+                ParentVC?.addChild(tabBioRef!)
             }
 
             let width = detailContainerView?.frame.width
@@ -155,7 +155,7 @@ class TabBar: UIViewController {
             
             detailContainerView?.addSubview((tabBioRef?.view)!)
             
-            tabBioRef?.didMove(toParentViewController: ParentVC)
+            tabBioRef?.didMove(toParent: ParentVC)
             
             //SET THE CURRENT VC IN DETAIL PANE.
             currentVcInDetailPane = "Biography"
@@ -167,7 +167,7 @@ class TabBar: UIViewController {
             tabSocialRef = newVc
             
             //ADD NEW VC
-            ParentVC?.addChildViewController(newVc!)
+            ParentVC?.addChild(newVc!)
             
             let width = detailContainerView?.frame.width
             let height = detailContainerView?.frame.height
@@ -176,7 +176,7 @@ class TabBar: UIViewController {
             
             detailContainerView?.addSubview((newVc?.view)!)
             
-            newVc?.didMove(toParentViewController: ParentVC)
+            newVc?.didMove(toParent: ParentVC)
             
             //SET THE CURRENT VC IN DETAIL PANE.
             currentVcInDetailPane = "Social Media"
@@ -188,7 +188,7 @@ class TabBar: UIViewController {
             tabNewsRef = newVc
             
             //ADD NEW VC
-            ParentVC?.addChildViewController(newVc!)
+            ParentVC?.addChild(newVc!)
             
             let width = detailContainerView?.frame.width
             let height = detailContainerView?.frame.height
@@ -197,7 +197,7 @@ class TabBar: UIViewController {
             
             detailContainerView?.addSubview((newVc?.view)!)
             
-            newVc?.didMove(toParentViewController: ParentVC)
+            newVc?.didMove(toParent: ParentVC)
             
             //SET THE CURRENT VC IN DETAIL PANE.
             currentVcInDetailPane = "News Feed"
@@ -209,7 +209,7 @@ class TabBar: UIViewController {
             tabStatsRef = newVc
             
             //ADD NEW VC
-            ParentVC?.addChildViewController(newVc!)
+            ParentVC?.addChild(newVc!)
             
             let width = detailContainerView?.frame.width
             let height = detailContainerView?.frame.height
@@ -218,7 +218,7 @@ class TabBar: UIViewController {
             
             detailContainerView?.addSubview((newVc?.view)!)
             
-            newVc?.didMove(toParentViewController: ParentVC)
+            newVc?.didMove(toParent: ParentVC)
             
             //SET THE CURRENT VC IN DETAIL PANE.
             currentVcInDetailPane = "Stats"
@@ -230,7 +230,7 @@ class TabBar: UIViewController {
             tabPetitionsRef = newVc
             
             //ADD NEW VC
-            ParentVC?.addChildViewController(newVc!)
+            ParentVC?.addChild(newVc!)
             
             let width = detailContainerView?.frame.width
             let height = detailContainerView?.frame.height
@@ -239,7 +239,7 @@ class TabBar: UIViewController {
             
             detailContainerView?.addSubview((newVc?.view)!)
             
-            newVc?.didMove(toParentViewController: ParentVC)
+            newVc?.didMove(toParent: ParentVC)
             
             //SET THE CURRENT VC IN DETAIL PANE.
             currentVcInDetailPane = "Petitions"
